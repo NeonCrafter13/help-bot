@@ -66,7 +66,7 @@ class Other(Cog, name="Other Commands"):
 
         description = "```\n" + output.replace("`", "`\u200b") + "\n```"
 
-        embed = Embed(title="Run Output", description=description)
+        embed = Embed(title=f"Run Output ({language})", description=description)
         if api_result["stderr"] and not api_result["stdout"]:
             embed.colour = 0xFF0000
 
